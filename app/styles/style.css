@@ -17,6 +17,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  background-color: #fff !important;
+}
 body,
 display flex,
 min-height 100vh,
@@ -238,6 +241,13 @@ blockquote {
   bottom: 15px;
   right: 15px;
 }
+.mediaImagenes1920 {
+  display: block;
+}
+.mediaImagenes1280,
+.mediaImagenes800 {
+  display: none;
+}
 .footer-copyright .container p {
   line-height: 25px;
   color: #5f5f5f;
@@ -275,6 +285,13 @@ footer .fooActive {
     height: 750px;
     background-image: url("../images/inicio.jpg");
   }
+  .mediaImagenes1280 {
+    display: block;
+  }
+  .mediaImagenes1920,
+  .mediaImagenes800 {
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) {
   .separadorTop {
@@ -293,6 +310,13 @@ footer .fooActive {
   }
   .contenedorPropa span {
     font-size: 50px;
+  }
+  .mediaImagenes800 {
+    display: block;
+  }
+  .mediaImagenes1920,
+  .mediaImagenes1280 {
+    display: none;
   }
 }
 /*

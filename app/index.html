@@ -17,9 +17,6 @@
             $('.tooltipped').tooltip({delay: 50});
             new WOW().init();
 
-            $('.slider').slider({full_width: true, height:630});
-
-
           });
 
         </script>
@@ -43,57 +40,28 @@
 
     <!-- Add your site or application content here -->
     
-    <nav style="z-index:999">
-      <div class="nav-wrapper pink lighten-2">
-        <a href="#" class="brand-logo titulo">Arteando  &nbsp;<span>Souvenirs</span></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">miCarrito</a></li>
-          <li><a href="#">CheckOut</a></li>
-        </ul>
+    <div class="navbar-fixed">
+      <nav style="z-index:999">
+        <div class="nav-wrapper pink lighten-2">
+          <a href="#" class="brand-logo titulo">Arteando  &nbsp;<span>Souvenirs</span></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">miCarrito</a></li>
+            <li><a href="#">CheckOut</a></li>
+          </ul>
 
-        <ul class="side-nav bg-principal" id="mobile-demo">
-          <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">miCarrito</a></li>
-          <li><a href="#">CheckOut</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="separadorTop"></div>
-    
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img class="mediaImagenes" src="./images/arteando-1280.jpg">
-          <div class="caption center-align">
-            <h3>Unicos</h3>
-            <h5 class="light grey-text text-lighten-3">Souvenirs, centros de mesa para cumpleaños, comuniones, bautismos... el modelo y tamaño que quieras!</h5>
-          </div>
-        </li>
-        <li>
-          <img class="mediaImagenes" src="./images/ninia-01-fondo-violeta2.jpg"> 
-          <div class="caption left-align">
-            <h3>Elegantes</h3>
-            <h5 class="light grey-text text-lighten-3">Souveniers para los eventos.</h5>
-          </div>
-        </li>
-        <li>
-          <img class="mediaImagenes" src="./images/serie-bailarinas.jpg"> 
-          <div class="caption left-align">
-            <h3>Serie Bailarinas</h3>
-            <h5 class="light grey-text text-lighten-3">Texto de las bailarinas.</h5>
-          </div>
-        </li>
-      </ul>
+          <ul class="side-nav bg-principal" id="mobile-demo">
+            <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">miCarrito</a></li>
+            <li><a href="#">CheckOut</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
     
-    <!-- <div class="parallax-container">
-      <div class="parallax"><img src="./images/ninia-01-1280.jpg"></div>
-    </div> -->
-        
     <div ng-view="" class="lado"></div>
 
     <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
