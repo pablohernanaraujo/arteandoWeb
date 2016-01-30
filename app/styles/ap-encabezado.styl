@@ -1,0 +1,52 @@
+/* ENCABEZADO */
+
+.titulo
+	font-family 'master_of_breakregular'
+	font-size 38px !important
+	margin-left 50px
+	textShadow(2px 1px 2px alpha(negro,60%))
+	
+	& span 
+		font-family sans-serif
+		font-size 20px !important
+		textShadow(0px 0px 0px alpha(negro,60%))
+nav 
+	position fixed
+	top 0
+	
+nav ul a 
+	color alpha(blanco,70%) !important
+	tra(.5s)
+	
+nav ul li.active 
+	pointer-events none
+	
+	& a 
+		color blanco !important
+	
+nav ul li:hover a
+	color blanco !important
+	
+.botones
+	margin 0 35px 15px
+	
+	& a 
+		margin 5px 0
+		width 100%
+		
+	& a:hover
+		background-color lighten(principal,25%)
+	
+#sidenav-overlay
+	z-index -1
+	
+.modal-footer a:hover
+	background-color lighten(rojo,25%)
+	
+.side-nav li:hover, .side-nav li.active
+	background-color lighten(principal,15%)
+	
+.slider .indicators .indicator-item.active
+	background-color principal !important
+		
+/* ENCABEZADO FINAL

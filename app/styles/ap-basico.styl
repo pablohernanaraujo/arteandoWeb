@@ -1,0 +1,94 @@
+/* BASICO */
+
+html 
+	//background-color lighten(negro,5%)
+	
+body 
+    display flex
+    min-height 100vh
+    flex-direction column
+
+main 
+	flex 1 0 auto
+	
+.sombra1
+	textShadow(0px 1px 2px negro)
+	
+.texto-principal
+	color alpha(principal,70%)
+   
+.texto-blanco
+	color alpha(blanco,70%)
+	
+.texto-rosa
+	color alpha(rosa,80%)
+	
+.texto-celeste
+	color alpha(celeste2,80%)
+	
+.texto-violeta
+	color alpha(violeta,80%)
+	
+.bg-principal
+	background-color alpha(principal,80%) !important
+	
+.bg-azul
+	background-color alpha(azul,80%) !important
+	
+.bg-rosa
+	background-color rosa !important
+	
+.bg-blanco
+	background-color blanco !important
+	
+.bg-rojo
+	background-color alpha(rojo,80%)
+	
+.bg-gris-oscuro
+	background-color lighten(negro,5%)
+	
+.contenedor
+	width 100%
+	min-height 400px
+	overflow hidden
+	padding 0
+	margin 0
+	box()
+
+.outer
+	float left 
+	position relative 
+	left 50%
+
+.inner
+	float left 
+	position relative 
+	left -50%
+	
+.lado 
+	position  absolute
+	left  0
+	top  0
+	width  100%
+	height  100%
+	z-index  -5
+
+.lado.ng-enter,
+.lado.ng-leave 
+	-webkit-transition  all 1s ease
+	transition  all 1s ease
+
+.lado.ng-enter 
+	left  100%
+
+.lado.ng-enter-active 
+	left  0
+
+.lado.ng-leave 
+	left  0
+
+.lado.ng-leave-active 
+	left  -100%
+
+	
+/* BASICO FINAL */

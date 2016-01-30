@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+          
+          $(document).ready(function(){
+
+            $('.parallax').parallax();
+            $('.button-collapse').sideNav();
+            $('.tooltipped').tooltip({delay: 50});
+            new WOW().init();
+
+            $('.slider').slider({full_width: true, height:630});
+
+
+          });
+
+        </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/materialize.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="arteandoApp" style="overflow-x:hidden">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    
+    <nav style="z-index:999">
+      <div class="nav-wrapper pink lighten-2">
+        <a href="#" class="brand-logo titulo">Arteando  &nbsp;<span>Souvenirs</span></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
+          <li><a href="#">Novedades</a></li>
+          <li><a href="#">miCarrito</a></li>
+          <li><a href="#">CheckOut</a></li>
+        </ul>
+
+        <ul class="side-nav bg-principal" id="mobile-demo">
+          <li ng-class="{ active: PAGE === 'inicio'}"><a href="#">Tienda</a></li>
+          <li><a href="#">Novedades</a></li>
+          <li><a href="#">miCarrito</a></li>
+          <li><a href="#">CheckOut</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="separadorTop"></div>
+    
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img class="mediaImagenes" src="./images/arteando-1280.jpg">
+          <div class="caption center-align">
+            <h3>Unicos</h3>
+            <h5 class="light grey-text text-lighten-3">Souvenirs, centros de mesa para cumpleaños, comuniones, bautismos... el modelo y tamaño que quieras!</h5>
+          </div>
+        </li>
+        <li>
+          <img class="mediaImagenes" src="./images/ninia-01-1280-sin-texto.jpg"> 
+          <div class="caption left-align">
+            <h3>Elegantes</h3>
+            <h5 class="light grey-text text-lighten-3">Souveniers para los eventos.</h5>
+          </div>
+        </li>
+        <li>
+          <img class="mediaImagenes" src="./images/serie-bailarinas.jpg"> 
+          <div class="caption left-align">
+            <h3>Serie Bailarinas</h3>
+            <h5 class="light grey-text text-lighten-3">Texto de las bailarinas.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- <div class="parallax-container">
+      <div class="parallax"><img src="./images/ninia-01-1280.jpg"></div>
+    </div> -->
+        
+
+    <div>
+      <div ng-view="" class="lado"></div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script> -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/controllers/inicio.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
