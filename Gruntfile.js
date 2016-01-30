@@ -431,7 +431,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:pablohernanaraujo/caribbeanBitchWeb.git',
+          remote: 'git@github.com:pablohernanaraujo/arteandoWeb.git',
           branch: 'gh-pages'
         }
       },
